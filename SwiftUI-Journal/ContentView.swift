@@ -8,19 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var journal = [JournalEntry(content: "Jag vaknade"),
+                   JournalEntry(content: "Jag tränade"),
+                   JournalEntry(content: "Jag åt"),
+                   JournalEntry(content: "Jag pluggade")]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                List() {
+                    ForEach(journal) { entry in
+                        NavigationLink(destination: JournalEntryView()){
+                            RowView(entry: entry)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Journal")
+            .navigationBarItems( trailing: NavigationLink(destination:
+             JournalEntryView()) {
+                Image(systemName: "plus.circle")
+            })
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct RowView: View {
+    let entry : JournalEntry
+    
+    
+    var body: some View {
+        HStack {
+            Text(entry.date)
+            Spacer()
+            Text(entry.content.prefix(7)+"...")
+        }
     }
 }
