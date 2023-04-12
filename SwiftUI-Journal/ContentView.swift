@@ -9,17 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var journal = [JournalEntry(content: "Jag vaknade"),
-                   JournalEntry(content: "Jag tränade"),
-                   JournalEntry(content: "Jag åt"),
-                   JournalEntry(content: "Jag pluggade")]
+    @EnvironmentObject var journal : JournalViewModel
     
     var body: some View {
         NavigationView{
             VStack {
                 List() {
-                    ForEach(journal) { entry in
-                        NavigationLink(destination: JournalEntryView()){
+                    ForEach(journal.entries) { entry in
+                        NavigationLink(destination: JournalEntryView(entry: entry)){
                             RowView(entry: entry)
                         }
                     }
@@ -27,9 +24,9 @@ struct ContentView: View {
             }
             .navigationTitle("Journal")
             .navigationBarItems( trailing: NavigationLink(destination:
-             JournalEntryView()) {
-                Image(systemName: "plus.circle")
-            })
+            JournalEntryView()) {
+            Image(systemName: "plus.circle")
+        })
         }
     }
 }

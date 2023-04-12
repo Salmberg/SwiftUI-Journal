@@ -16,6 +16,7 @@
 		CB65ADED29E5D76C00A55F30 /* SwiftUI_JournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65ADEC29E5D76C00A55F30 /* SwiftUI_JournalUITestsLaunchTests.swift */; };
 		CB65ADFA29E5D8B200A55F30 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65ADF929E5D8B200A55F30 /* JournalEntry.swift */; };
 		CB65ADFC29E5DC3900A55F30 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65ADFB29E5DC3900A55F30 /* JournalEntryView.swift */; };
+		CB8898F429E6D18A005CB573 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8898F329E6D18A005CB573 /* JournalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,8 @@
 		CB65ADEA29E5D76C00A55F30 /* SwiftUI_JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_JournalUITests.swift; sourceTree = "<group>"; };
 		CB65ADEC29E5D76C00A55F30 /* SwiftUI_JournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_JournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB65ADF929E5D8B200A55F30 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
-		CB65ADFB29E5DC3900A55F30 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		CB65ADFB29E5DC3900A55F30 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CB8898F329E6D18A005CB573 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CB65ADD529E5D76C00A55F30 /* Preview Content */,
 				CB65ADF929E5D8B200A55F30 /* JournalEntry.swift */,
 				CB65ADFB29E5DC3900A55F30 /* JournalEntryView.swift */,
+				CB8898F329E6D18A005CB573 /* JournalViewModel.swift */,
 			);
 			path = "SwiftUI-Journal";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				CB65ADFA29E5D8B200A55F30 /* JournalEntry.swift in Sources */,
 				CB65ADFC29E5DC3900A55F30 /* JournalEntryView.swift in Sources */,
+				CB8898F429E6D18A005CB573 /* JournalViewModel.swift in Sources */,
 				CB65ADD229E5D76B00A55F30 /* ContentView.swift in Sources */,
 				CB65ADD029E5D76B00A55F30 /* SwiftUI_JournalApp.swift in Sources */,
 			);
